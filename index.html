@@ -5,82 +5,114 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Toolblt.ai — Coming Soon</title>
 
-  <!-- Basic SEO -->
+  <!-- SEO -->
   <meta name="description" content="Toolblt.ai — Your AI-powered Alpha Engine. Institutional-grade insights for retail investors. Join the Beta waitlist." />
-  <meta name="robots" content="index,follow" />
 
-  <!-- Open Graph / Twitter -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Toolblt.ai — Coming Soon" />
   <meta property="og:description" content="Your AI-powered Alpha Engine. Institutional-grade insights for retail investors. Join the Beta waitlist." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://toolblt.ai" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Toolblt.ai — Coming Soon" />
-  <meta name="twitter:description" content="Your AI-powered Alpha Engine for retail investors. Join the Beta waitlist." />
 
-  <!-- Inline favicon (no external file) -->
-  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="%230b1020"/><text x="50%" y="54%" font-size="36" text-anchor="middle" fill="%23ffffff" font-family="Segoe UI, Roboto, Arial">T</text></svg>' />
+  <!-- Favicon -->
+  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="%23000000"/><text x="50%" y="54%" font-size="36" text-anchor="middle" fill="%23ff5a54" font-family="Segoe UI, Roboto, Arial">T</text></svg>' />
 
-  <!-- Minimal, responsive styles (no external CSS) -->
   <style>
-    :root{
-      --bg:#0b1020;--fg:#e7e9f3;--muted:#a7aec7;--brand:#6c7bff;
-      --card:rgba(255,255,255,.03);--border:rgba(255,255,255,.08)
+    :root {
+      --beige: #f0e9d7;
+      --white: #ffffff;
+      --black: #000000;
+      --accent: #ff5a54;
     }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,Segoe UI,Roboto,Ubuntu,Arial}
-    a{color:var(--fg);text-decoration:none}
-    a:hover{opacity:.85}
-    .wrap{min-height:100%;display:flex;align-items:center;justify-content:center;padding:56px 20px}
-    .card{max-width:860px;width:100%;background:var(--card);border:1px solid var(--border);border-radius:18px;padding:32px 22px;backdrop-filter:blur(6px)}
-    .brand{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:8px}
-    .logo{font-weight:800;font-size:28px;letter-spacing:.2px}
-    .dot{color:var(--brand)}
-    .tag{color:var(--muted);margin:0 0 18px;text-align:center}
-    .soon{font-weight:600;text-align:center;margin:8px 0 18px}
-    .youform{margin:10px auto 0;max-width:860px}
-    .footer{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:18px;font-size:12px;color:var(--muted)}
-    .footer a{color:var(--muted);text-decoration:underline}
-    .notice{margin-top:10px;text-align:center;font-size:12px;color:var(--muted)}
-    /* small screens */
-    @media (max-width:600px){ .card{padding:24px 16px} .logo{font-size:24px} }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--beige);
+      color: var(--black);
+      font: 16px/1.6 system-ui, Segoe UI, Roboto, Ubuntu, Arial;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .card {
+      background: var(--white);
+      border: 2px solid var(--black);
+      border-radius: 16px;
+      padding: 32px 24px;
+      max-width: 800px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 4px 4px 0 var(--black);
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 32px;
+      font-weight: 800;
+    }
+    h1 span {
+      color: var(--accent);
+    }
+    .tagline {
+      margin: 0 0 24px;
+      color: var(--black);
+      font-size: 18px;
+    }
+    .soon {
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 20px;
+    }
+    .youform {
+      margin: 0 auto;
+      max-width: 700px;
+    }
+    .footer {
+      margin-top: 24px;
+      font-size: 13px;
+      color: var(--black);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+    }
+    .footer a {
+      color: var(--black);
+      text-decoration: underline;
+    }
+    .notice {
+      margin-top: 10px;
+      font-size: 12px;
+      color: var(--black);
+    }
   </style>
 </head>
 <body>
-  <main class="wrap">
-    <section class="card" role="region" aria-label="Coming soon">
-      <div class="brand" aria-label="Toolblt.ai">
-        <div class="logo">Toolblt<span class="dot">.ai</span></div>
-      </div>
-      <p class="tag">Your AI-powered Alpha Engine. Institutional-grade insights for retail investors.</p>
-      <div class="soon">🚀 Launching soon — join the Beta waitlist</div>
+  <main class="card">
+    <h1>Toolblt<span>.ai</span></h1>
+    <p class="tagline">Your AI-powered Alpha Engine. Institutional-grade insights for retail investors.</p>
+    <div class="soon">🚀 Launching soon — join the Beta waitlist</div>
 
-      <!-- Beta waitlist form (YouForm) -->
-      <div class="youform" data-youform-embed data-form="9csflwnf" data-width="100%" data-height="700"></div>
-      <script src="https://app.youform.com/embed.js"></script>
+    <!-- Beta waitlist form -->
+    <div class="youform" data-youform-embed data-form="9csflwnf" data-width="100%" data-height="700"></div>
+    <script src="https://app.youform.com/embed.js"></script>
 
-      <!-- Fallback for users with JS disabled -->
-      <noscript>
-        <p class="notice">JavaScript is required to load the sign-up form. Please enable JavaScript to join the Beta waitlist.</p>
-      </noscript>
-
-      <div class="footer" aria-label="Site links">
-        <span>© <span id="year"></span> Toolblt.ai</span>
-        <span>·</span>
-        <a href="#" aria-label="Disclaimer">Disclaimer</a>
-        <span>·</span>
-        <a href="#" aria-label="Privacy Policy">Privacy Policy</a>
-        <span>·</span>
-        <a href="mailto:hello@toolblt.ai" aria-label="Contact us">Contact</a>
-      </div>
-      <div class="notice">Informational only, not investment advice.</div>
-    </section>
+    <div class="footer">
+      <span>© <span id="year"></span> Toolblt.ai</span>
+      <span>·</span>
+      <a href="#">Disclaimer</a>
+      <span>·</span>
+      <a href="#">Privacy Policy</a>
+      <span>·</span>
+      <a href="mailto:hello@toolblt.ai">Contact</a>
+    </div>
+    <div class="notice">Informational only, not investment advice.</div>
   </main>
 
-  <!-- Tiny inline script just to set the year, safe even if blocked -->
   <script>
-    (function(){ try{ document.getElementById('year').textContent = new Date().getFullYear(); }catch(e){} })();
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
